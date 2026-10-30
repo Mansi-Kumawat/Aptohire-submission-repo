@@ -629,17 +629,6 @@ AptoHire was built by a three-member founding team combining product vision, tec
 
 Open an issue before larger changes. Keep real keys out of commits (only `.env.example` is committed), never edit an applied database migration (add a new one), keep every portal independent (no cross-portal imports), and keep the **blind-by-default**, **consent-to-reveal** and **human-in-the-loop** principles intact.
 
-### Where help is needed: documentation and submission priorities
-
-| Priority | Improvement | Why | Status |
-|:-:|:--|:--|:--|
-| **P0** | AI engine technical explanation | Demonstrates actual AI implementation | 🧪 Section and sequence diagram added; model/provider names and evaluation still to be filled from the implementation |
-| **P0** | AI usage report and workflow links | Directly relevant to hackathon requirements | 🧪 Linked to [AI_Utilization](AI_Utilization/); per-stage rows pending an audit of the records |
-| **P1** | Real screenshots and demo showcase | Makes the product immediately understandable | 🗺️ Video linked; screenshots and poster image still to be added |
-| **P1** | Impact metrics and feature audit | Makes claims measurable and verifiable | ✅ Engineering snapshot and capability audit added; user-impact metrics only once measured |
-| **P2** | Better founder cards and profiles | Establishes team credibility | 🧪 Cards added; Ravi's photo and LinkedIn links still to be added |
-| **P2** | Visual architecture and roadmap | Improves readability | ✅ Architecture diagrams and roadmap image added |
-
 ### License
 
 *TODO: add a LICENSE file (for example MIT or Apache-2.0).*
