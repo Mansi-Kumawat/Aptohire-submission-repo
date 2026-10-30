@@ -6,7 +6,7 @@ audience: "Judges, investors, university and hiring partners"
 ---
 
 # AptoHire
-## Product innovation: make potential easier to see
+## AI-first product innovation: make potential easier to see
 
 > **The idea in one line:** AptoHire aims to help universities and employers move beyond résumé-first screening by connecting a learner’s skills to evidence of what they can actually do.
 
@@ -58,6 +58,28 @@ flowchart LR
 These are intended product principles; the live product must be tested to confirm which are implemented today.
 
 </details>
+
+### The AI-first intelligence layer
+
+AptoHire's AI-first approach is intended to make skills evidence more useful and
+easier to interpret across the learner-to-employer journey:
+
+| AI capability | Intended workflow value | Governance |
+|---|---|---|
+| AI-assisted project assessment | Help evaluate submitted work against defined skill rubrics | Evidence-linked results and human review |
+| Skill intelligence and skill graphs | Organise demonstrated capabilities and identify relationships | Explainable skill-level signals |
+| AI-supported project recommendations | Suggest practice projects aligned with a learner's current level | Recommendations remain guidance, not guarantees |
+| Job-description skill extraction | Structure role requirements into skills that can be compared with candidate evidence | Recruiters retain decision-making responsibility |
+
+**Responsible AI principle: AI proposes; people and policy govern.**
+AI should support assessment and discovery, not independently decide a person's
+employability. Identity, consent and access permissions remain governed by
+explicit rules and user controls.
+
+**Implementation caveat:** These are product capabilities and prototype
+workflows, not a claim that every AI feature is production-connected or
+independently validated. The repository's mock/demo defaults and project-status
+notes should be considered when describing implementation maturity.
 
 ## 4. Why it could matter
 
