@@ -599,14 +599,14 @@ AptoHire was built by a three-member founding team combining product vision, tec
 <table>
   <tr>
     <td align="center" width="33%">
-      <!-- TODO: add photo, e.g. <img src="Assets/team/ravi.jpg" width="110" style="border-radius:50%"> -->
+      <a href="https://github.com/raviprakashsinghk-19108"><img src="AI_First_Startup_Hackathon_Journey/Icode_Team_Workflow/assets/ravi-placeholder.svg" width="110" alt="Ravi Prakash"></a>
       <br><b>Ravi Prakash</b><br><sub><b>Founder</b></sub><br><br>
-      Originated the idea and contributed to early product discussions.<br><br>
-      <!-- TODO: add Ravi's GitHub profile link and badge once available -->
+      Defined the product idea and its trust model, designed the student lifecycle, and leads user research and outreach.<br><br>
+      <a href="https://github.com/raviprakashsinghk-19108"><img src="https://img.shields.io/badge/GitHub-connect-181717?style=flat-square&logo=github" alt="GitHub"></a>
       <a href="https://www.linkedin.com/in/ravi-prakash-singh-kushwaha-348446426/"><img src="https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
     </td>
     <td align="center" width="33%">
-      <a href="https://github.com/Mansi-Kumawat"><img src="https://avatars.githubusercontent.com/u/145416594?v=4" width="110" alt="Mansi Kumawat"></a>
+      <a href="https://github.com/Mansi-Kumawat"><img src="AI_First_Startup_Hackathon_Journey/Icode_Team_Workflow/assets/mansi-placeholder.svg" width="110" alt="Mansi Kumawat"></a>
       <br><b>Mansi Kumawat</b><br><sub><b>Co-founder &amp; Team Lead</b></sub><br><br>
       Led team coordination, documentation and full-stack development.<br><br>
       <a href="https://github.com/Mansi-Kumawat"><img src="https://img.shields.io/badge/GitHub-connect-181717?style=flat-square&logo=github" alt="GitHub"></a>
