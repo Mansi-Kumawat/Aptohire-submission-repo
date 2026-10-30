@@ -41,7 +41,7 @@
 | 🛡️ | **Admin console** (AptoHire staff) | [aptohire-admin.vercel.app](https://aptohire-admin.vercel.app) · [repo](https://github.com/Mansi-Kumawat/aptohire-admin) |
 | 🗄️ | **Shared backend** (Supabase) | `aptohire-backend` *(not part of the five repos; add link when merged)* |
 | 📘 | **Master runbook** (run, demo, deploy) | [MASTER-RUNBOOK.md](MASTER-RUNBOOK.md) |
-| 🎬 | **Demo video** | [AptoHire Product Film (1080p)](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4) |
+| 🎬 | **Demo video** | [AptoHire Product Film (1080p)](Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4) |
 | 🤖 | **AI usage evidence** | [AI_Utilization folder](AI_Utilization/) · [section below](#-ai-first-development-and-usage-evidence) |
 
 </div>
@@ -56,14 +56,14 @@ Everything a judge or reviewer needs, one click away. The live product links are
 
 | | Submission | Direct link |
 |:-:|:--|:--|
-| 💡 | **Idea document** | [Reviewed AptoHire Idea Document](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/AI_First_Startup_Hackathon_Journey/Solution_making%28Protected%29/AptoHire_Idea_Document_Reviewed.docx) |
-| 📊 | **Pitch deck** | [AptoHire Pitch Deck](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Pitch%20Deck%20and%20Demo%20Video/Pitch_Deck/AptoHire_Pitch_Deck.pptx) |
-| 🎬 | **Demo video** | [AptoHire Product Film](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4) |
+| 💡 | **Idea document** | [Reviewed AptoHire Idea Document](AI_First_Startup_Hackathon_Journey/Solution_making%28Protected%29/AptoHire_Idea_Document_Reviewed.docx) |
+| 📊 | **Pitch deck** | [AptoHire Pitch Deck](Pitch%20Deck%20and%20Demo%20Video/Pitch_Deck/AptoHire_Pitch_Deck.pptx) |
+| 🎬 | **Demo video** | [AptoHire Product Film](Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4) |
 | 🎯 | **Problem statement** | [Problem Statement](Problem_statement.md) |
 | 🚀 | **Product innovation** | [Product Innovation](Product_Innovation.md) |
 | 📈 | **Market analysis** | [Market Potential](Market_Potential.md) |
 | 🏗️ | **Technical documentation** | [System Architecture](System_Architecture.md) |
-| 👥 | **Team execution** | [Team Workflow & Timeline](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/AI_First_Startup_Hackathon_Journey/Icode_Team_Workflow/Team_workflow_timeline.md) |
+| 👥 | **Team execution** | [Team Workflow & Timeline](AI_First_Startup_Hackathon_Journey/Icode_Team_Workflow/Team_workflow_timeline.md) |
 | 🤖 | **AI utilization evidence** | [AI_Utilization](AI_Utilization/) |
 
 </div>
@@ -172,7 +172,7 @@ flowchart TB
 
 </div>
 
-📁 **[Download the 1080p MP4 from this repository](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4)** · 🌐 **[Try the live prototype](https://aptohire.vercel.app)**
+📁 **[Download the 1080p MP4 from this repository](Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4)** · 🌐 **[Try the live prototype](https://aptohire.vercel.app)**
 
 <!-- TODO: add timestamps per portal once confirmed from the video, e.g. 00:00 Student, 00:45 Organization ... -->
 
@@ -390,7 +390,7 @@ AptoHire was built with AI tools as a core part of the workflow, with humans gui
 |:--|:--|
 | Whole-journey record | [AI_First_Startup_Hackathon_Journey](AI_First_Startup_Hackathon_Journey/) |
 | AI usage report and tool-specific records | [AI_Utilization](AI_Utilization/) |
-| Team workflow and execution timeline | [Team workflow & timeline](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/AI_First_Startup_Hackathon_Journey/Icode_Team_Workflow/Team_workflow_timeline.md) |
+| Team workflow and execution timeline | [Team workflow & timeline](AI_First_Startup_Hackathon_Journey/Icode_Team_Workflow/Team_workflow_timeline.md) |
 | Build prompts and phase-by-phase process | [MASTER-RUNBOOK.md](MASTER-RUNBOOK.md) (prompts `00` to `05`, one per project) |
 
 <!--
@@ -628,7 +628,7 @@ AptoHire was built by a three-member founding team combining product vision, tec
 
 **Our execution philosophy:** AI-assisted development with human-led product decisions, implementation reviews, testing and continuous iteration.
 
-📌 [View the complete team workflow and execution timeline](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/AI_First_Startup_Hackathon_Journey/Icode_Team_Workflow/Team_workflow_timeline.md)
+📌 [View the complete team workflow and execution timeline](AI_First_Startup_Hackathon_Journey/Icode_Team_Workflow/Team_workflow_timeline.md)
 
 ---
 
