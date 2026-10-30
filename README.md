@@ -2,7 +2,8 @@
 
 <img src="Assets/banner.png" alt="AptoHire: Proof-first hiring. Hired for what you can do." width="100%">
 
-<p><strong>AI-first, evidence-led hiring.</strong></p>
+<b>AI-first, evidence-led hiring.</b>
+
 <p><i>A résumé is a claim. An AI-assisted, human-reviewed scorecard connects skills to proof.</i></p>
 
 [![Live: Root](https://img.shields.io/badge/Live-aptohire.vercel.app-007548?style=for-the-badge)](https://aptohire.vercel.app)
@@ -24,7 +25,7 @@
 ![Privacy](https://img.shields.io/badge/Privacy-blind%20by%20default-F97316?style=flat-square)
 ![Security](https://img.shields.io/badge/Admin-TOTP%20two--step-F59E0B?style=flat-square)
 
-**[Problem](#-the-problem) · [AI-first solution](#-our-ai-first-solution) · [Portals](#-five-portals-one-platform) · [Journey](#-end-to-end-journey) · [Features](#-feature-showcase) · [Trust and privacy](#-trust-privacy-and-security-by-design) · [Architecture](#-architecture) · [Status](#-honest-project-status) · [Run](#-run-it-locally) · [Deploy](#-deploy) · [Roadmap](#-roadmap) · [Team](#-team)**
+**[Submission pack](#-hackathon-submission-pack) · [Problem](#-the-problem) · [AI-first solution](#-our-ai-first-solution) · [Portals](#-five-portals-one-platform) · [Journey](#-end-to-end-journey) · [Features](#-feature-showcase) · [Trust and privacy](#-trust-privacy-and-security-by-design) · [Architecture](#-architecture) · [Status](#-honest-project-status) · [Run](#-run-it-locally) · [Deploy](#-deploy) · [Roadmap](#-roadmap) · [Founders](#-founding-team)**
 
 </div>
 
@@ -42,7 +43,29 @@
 | 🏢 | **Organization portal** (recruiters) | [aptohire-organization.vercel.app](https://aptohire-organization.vercel.app) · [repo](https://github.com/Mansi-Kumawat/aptohire-organization) |
 | 🛡️ | **Admin console** (AptoHire staff) | [aptohire-admin.vercel.app](https://aptohire-admin.vercel.app) · [repo](https://github.com/Mansi-Kumawat/aptohire-admin) |
 | 🗄️ | **Shared backend** (Supabase) | `aptohire-backend` *(not part of the five repos; add link when merged)* |
-| 🎬 | **Demo video** | *TODO: add link* |
+| 🎬 | **Demo video** | [AptoHire Product Film (1080p)](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4) |
+| 🏆 | **Hackathon submission pack** | [Jump to the pack](#-hackathon-submission-pack) |
+
+</div>
+
+---
+
+## 🏆 Hackathon Submission Pack
+
+Everything a judge or reviewer needs, one click away. These are the actual hackathon deliverables; the live product links are in [Quick links](#-quick-links) above.
+
+<div align="center">
+
+| | Submission | Direct link |
+|:-:|:--|:--|
+| 💡 | **Idea document** | [Reviewed AptoHire Idea Document](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/AI_First_Startup_Hackathon_Journey/Solution_making%28Protected%29/AptoHire_Idea_Document_Reviewed.docx) |
+| 📊 | **Pitch deck** | [AptoHire Pitch Deck](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Pitch%20Deck%20and%20Demo%20Video/Pitch_Deck/AptoHire_Pitch_Deck.pptx) |
+| 🎬 | **Demo video** | [AptoHire Product Film](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4) |
+| 🎯 | **Problem statement** | [Problem Statement](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Problem_statement.md) |
+| 🚀 | **Product innovation** | [Product Innovation](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Product_Innovation.md) |
+| 📈 | **Market analysis** | [Market Potential](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Market_Potential.md) |
+| 🏗️ | **Technical documentation** | [System Architecture](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/System_Architecture.md) |
+| 👥 | **Team execution** | [Team Workflow & Timeline](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/AI_First_Startup_Hackathon_Journey/Icode_Team_Workflow/Team_workflow_timeline.md) |
 
 </div>
 
@@ -140,11 +163,11 @@ AptoHire is **five independent web apps** that share **one Supabase database**. 
 ```mermaid
 flowchart TB
   DB[(🗄️ aptohire-backend<br/>Supabase: Postgres + RLS + Edge Functions)]
-  R[🌐 Root<br/>aptohire.com<br/>:5173]
-  S[🎓 Student<br/>student.aptohire.com<br/>:5174]
-  U[🏛️ University<br/>university.aptohire.com<br/>:5175]
-  O[🏢 Organization<br/>organization.aptohire.com<br/>:5176]
-  A[🛡️ Admin<br/>admin.aptohire.com<br/>:5177]
+  R[🌐 Root<br/>:5173]
+  S[🎓 Student<br/>:5174]
+  U[🏛️ University<br/>:5175]
+  O[🏢 Organization<br/>:5176]
+  A[🛡️ Admin<br/>:5177]
   R --> DB
   S --> DB
   U --> DB
@@ -157,13 +180,15 @@ flowchart TB
 
 <div align="center">
 
-| Portal | Audience | Local port | Production domain | What it does |
-|:--|:--|:-:|:--|:--|
-| 🌐 **Root** | Everyone | 5173 | `aptohire.com` | Landing, applications, public credential verification at `/verify/<id>` |
-| 🎓 **Student** | Student engineers | 5174 | `student.aptohire.com` | Projects, submissions, scorecards, skill graph, résumé, sharing and consent |
-| 🏛️ **University** | Placement cell (TPO) | 5175 | `university.aptohire.com` | Roster import, cohorts, verified skills, placements, aggregate skills demand |
-| 🏢 **Organization** | Recruiters | 5176 | `organization.aptohire.com` | Blind candidate search, access requests, consent-based reveal |
-| 🛡️ **Admin** | AptoHire staff | 5177 | `admin.aptohire.com` | Approvals, blind reviews, appeals, AI agent runs, kill switch, audit log |
+| Portal | Audience | Live app | Source code | Local port | What it does |
+|:--|:--|:--|:--|:-:|:--|
+| 🌐 **Root** | Everyone | [aptohire.vercel.app](https://aptohire.vercel.app) | [aptohire](https://github.com/Mansi-Kumawat/aptohire) | 5173 | Landing, applications, public credential verification at `/verify/<id>` |
+| 🎓 **Student** | Student engineers | [aptohire-student.vercel.app](https://aptohire-student.vercel.app) | [aptohire-student](https://github.com/Mansi-Kumawat/aptohire-student) | 5174 | Projects, submissions, scorecards, skill graph, résumé, sharing and consent |
+| 🏛️ **University** | Placement cell (TPO) | [aptohire-university.vercel.app](https://aptohire-university.vercel.app) | [aptohire-university](https://github.com/Mansi-Kumawat/aptohire-university) | 5175 | Roster import, cohorts, verified skills, placements, aggregate skills demand |
+| 🏢 **Organization** | Recruiters | [aptohire-organization.vercel.app](https://aptohire-organization.vercel.app) | [aptohire-organization](https://github.com/Mansi-Kumawat/aptohire-organization) | 5176 | Blind candidate search, access requests, consent-based reveal |
+| 🛡️ **Admin** | AptoHire staff | [aptohire-admin.vercel.app](https://aptohire-admin.vercel.app) | [aptohire-admin](https://github.com/Mansi-Kumawat/aptohire-admin) | 5177 | Approvals, blind reviews, appeals, AI agent runs, kill switch, audit log |
+
+<sub>Planned custom domains (not live yet): `aptohire.com`, `student.`, `university.`, `organization.` and `admin.aptohire.com`.</sub>
 
 </div>
 
@@ -512,37 +537,27 @@ Admin extras: create the first admin manually using the backend's `scripts/creat
 
 ## 🗺️ Roadmap
 
-```mermaid
-timeline
-  title AptoHire roadmap
-  Now : Merge five repos into one monorepo
-      : Publish shared backend contract
-      : Unified README, docs and CI
-  Next : Real Supabase adapters in every portal
-       : Organization consent-based reveal and privacy tests
-       : Admin RLS and MFA step-up validation
-  Then : Auto-scored multi-modal assessments in production
-       : Employer funnel analytics
-       : University curriculum-vs-demand insights
-  Later : Accessibility audit (WCAG)
-        : Multilingual support
-        : Enterprise HR integrations
-```
+<p align="center"><img src="Assets/roadmap.png" alt="AptoHire roadmap. Now: merge five repos into one monorepo, publish shared backend contract, unified README, docs and CI. Next: real Supabase adapters in every portal, organization consent-based reveal and privacy tests, admin RLS and MFA step-up validation. Then: auto-scored multi-modal assessments in production, employer funnel analytics, university curriculum-vs-demand insights. Later: accessibility audit (WCAG), multilingual support, enterprise HR integrations." width="100%"></p>
 
 ---
 
-## 👥 Team
+## 🚀 Founding Team
+
+AptoHire was built by a three-member founding team combining product vision, technical execution, full-stack development and testing.
 
 <div align="center">
 
-<!-- TODO: add real names, roles, GitHub and LinkedIn links -->
-
-| Member | Role | Links |
+| Founder | Role | Contribution |
 |:--|:--|:--|
-| **Mansi Kumawat** | *TODO: role* | [GitHub](https://github.com/Mansi-Kumawat) |
-| *Add teammate* | *role* | *links* |
+| **Ravi Prakash** | Founder | Originated the idea and contributed to early product discussions. |
+| **[Mansi Kumawat](https://github.com/Mansi-Kumawat)** | Co-founder & Team Lead | Led team coordination, documentation and full-stack development. |
+| **Laxminarayan Sahu** | Co-founder | Contributed technical guidance, UI/technology inputs and testing. |
 
 </div>
+
+**Our execution philosophy:** AI-assisted development with human-led product decisions, implementation reviews, testing and continuous iteration.
+
+📌 [View the complete team workflow and execution timeline](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/AI_First_Startup_Hackathon_Journey/Icode_Team_Workflow/Team_workflow_timeline.md)
 
 ---
 
@@ -557,6 +572,6 @@ Open an issue before larger changes. Keep real keys out of commits, keep every p
 <details>
 <summary><b>Keywords</b></summary>
 
-`ai-first-hiring` · `ai-powered-talent-platform` · `ai-assisted-assessment` · `ai-skill-intelligence` · `responsible-ai` · `human-in-the-loop-ai` · `skills-based-hiring` · `proof-of-skill` · `verified-credentials` · `blind-hiring` · `consent-based-access` · `skill-graph` · `placement-analytics` · `human-in-the-loop` · `responsible-ai` · `audit-trail` · `supabase` · `row-level-security` · `react` · `typescript` · `vite` · `tailwindcss` · `playwright` · `vercel` · `hrtech` · `edtech`
+`ai-first-hiring` · `ai-powered-talent-platform` · `ai-assisted-assessment` · `ai-skill-intelligence` · `skills-based-hiring` · `proof-of-skill` · `verified-credentials` · `blind-hiring` · `consent-based-access` · `skill-graph` · `placement-analytics` · `human-in-the-loop` · `responsible-ai` · `audit-trail` · `supabase` · `row-level-security` · `react` · `typescript` · `vite` · `tailwindcss` · `playwright` · `vercel` · `hrtech` · `edtech`
 
 </details>
