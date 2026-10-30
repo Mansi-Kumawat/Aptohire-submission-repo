@@ -162,14 +162,17 @@ flowchart TB
 
 <div align="center">
 
-<video src="Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4" controls preload="metadata" width="100%">
-  Your browser does not support the video tag.
-  <a href="Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4">Download the AptoHire Product Film (1080p)</a>.
-</video>
+<a href="https://www.youtube.com/watch?v=xQfRwbxzPZ8">
+  <img src="https://img.youtube.com/vi/xQfRwbxzPZ8/maxresdefault.jpg"
+       alt="Watch the AptoHire Product Film on YouTube"
+       width="100%">
+</a>
+
+**▶ [Watch the AptoHire Product Film on YouTube](https://www.youtube.com/watch?v=xQfRwbxzPZ8)**
 
 </div>
 
-▶️ **[Watch the AptoHire Product Film (1080p)](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4)** · 🌐 **[Try the live prototype](https://aptohire.vercel.app)**
+📁 **[Download the 1080p MP4 from this repository](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4)** · 🌐 **[Try the live prototype](https://aptohire.vercel.app)**
 
 <!-- TODO: add timestamps per portal once confirmed from the video, e.g. 00:00 Student, 00:45 Organization ... -->
 
