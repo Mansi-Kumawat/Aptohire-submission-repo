@@ -2,7 +2,8 @@
 
 <img src="Assets/banner.png" alt="AptoHire: Proof-first hiring. Hired for what you can do." width="100%">
 
-<p><i>A résumé is a claim. A verified scorecard is proof.</i></p>
+<p><strong>AI-first, evidence-led hiring.</strong></p>
+<p><i>A résumé is a claim. An AI-assisted, human-reviewed scorecard connects skills to proof.</i></p>
 
 [![Live: Root](https://img.shields.io/badge/Live-aptohire.vercel.app-007548?style=for-the-badge)](https://aptohire.vercel.app)
 [![Student](https://img.shields.io/badge/Student-portal-F97316?style=for-the-badge)](https://aptohire-student.vercel.app)
@@ -19,10 +20,11 @@
 ![Vercel](https://img.shields.io/badge/Vercel-deployed-000?style=flat-square&logo=vercel)
 ![Playwright](https://img.shields.io/badge/Playwright-E2E-2EAD33?style=flat-square&logo=playwright&logoColor=fff)
 ![Vitest](https://img.shields.io/badge/Vitest-unit%20tests-6E9F18?style=flat-square&logo=vitest&logoColor=fff)
+![AI-first](https://img.shields.io/badge/AI--first-talent%20intelligence-6C5CE7?style=flat-square)
 ![Privacy](https://img.shields.io/badge/Privacy-blind%20by%20default-F97316?style=flat-square)
 ![Security](https://img.shields.io/badge/Admin-TOTP%20two--step-F59E0B?style=flat-square)
 
-**[Problem](#-the-problem) · [Solution](#-our-solution) · [Portals](#-five-portals-one-platform) · [Journey](#-end-to-end-journey) · [Features](#-feature-showcase) · [Trust and privacy](#-trust-privacy-and-security-by-design) · [Architecture](#-architecture) · [Status](#-honest-project-status) · [Run](#-run-it-locally) · [Deploy](#-deploy) · [Roadmap](#-roadmap) · [Team](#-team)**
+**[Problem](#-the-problem) · [AI-first solution](#-our-ai-first-solution) · [Portals](#-five-portals-one-platform) · [Journey](#-end-to-end-journey) · [Features](#-feature-showcase) · [Trust and privacy](#-trust-privacy-and-security-by-design) · [Architecture](#-architecture) · [Status](#-honest-project-status) · [Run](#-run-it-locally) · [Deploy](#-deploy) · [Roadmap](#-roadmap) · [Team](#-team)**
 
 </div>
 
@@ -91,9 +93,9 @@ Résumés are self-declared. Degrees and college names stand in for skill. Recru
 
 ---
 
-## 💡 Our solution
+## 💡 Our AI-first solution
 
-AptoHire connects **verified student engineers** to employers through **real-world, multi-modal project assessments**, **skill-graph evaluation** and **verifiable credential audit trails**. Recruiters see **blind candidate cards**. A student's identity is revealed only when the student grants scoped, time-limited access.
+AptoHire is an **AI-first, evidence-led talent platform** that helps turn real-world, multi-modal project submissions into structured skill evidence. Its AI-assisted workflow supports project assessment, scorecard generation, skill-graph evaluation, level-appropriate project suggestions and job-description-to-skill structuring. **AI proposes; transparent rules and human oversight govern consequential decisions.** Borderline scores are routed to identity-blind human review, appeals receive an independent second look, and recruiters see blind candidate cards until a student grants scoped, time-limited access. The goal is not to replace human judgement or rank people using an opaque model, but to make demonstrated ability easier to inspect.
 
 ```mermaid
 flowchart LR
@@ -278,6 +280,20 @@ journey
 | 🔐 | **Public verification** | `/verify/<id>` validates a credential's proof seal | 🧪 |
 
 </div>
+
+---
+
+## 🧠 AI-first, human-governed workflow
+
+AptoHire uses AI as an assistance layer across the talent-evidence journey:
+
+- **AI-assisted project assessment:** analyse submitted work against defined skill rubrics and help produce evidence-linked scorecards.
+- **Skill intelligence:** organise demonstrated capabilities into a connected skill graph and surface skill-level insights.
+- **AI-supported learning pathways:** suggest level-appropriate projects to help students build evidence in areas where they need practice.
+- **Job-description intelligence:** structure role descriptions into required skills so that evidence can be compared with role needs.
+- **Human oversight:** send borderline or disputed results to a reviewer who is blind to candidate identity; AI output is not the final authority.
+
+> **Responsible-AI principle: AI proposes, people and policy govern.** Identity checks, consent, permissions and access control remain rule-based. The current repository documents a prototype with mock/demo defaults; this positioning does not imply that every AI workflow is production-connected or independently validated.
 
 ---
 
@@ -541,6 +557,6 @@ Open an issue before larger changes. Keep real keys out of commits, keep every p
 <details>
 <summary><b>Keywords</b></summary>
 
-`skills-based-hiring` · `proof-of-skill` · `verified-credentials` · `blind-hiring` · `consent-based-access` · `skill-graph` · `placement-analytics` · `human-in-the-loop` · `responsible-ai` · `audit-trail` · `supabase` · `row-level-security` · `react` · `typescript` · `vite` · `tailwindcss` · `playwright` · `vercel` · `hrtech` · `edtech`
+`ai-first-hiring` · `ai-powered-talent-platform` · `ai-assisted-assessment` · `ai-skill-intelligence` · `responsible-ai` · `human-in-the-loop-ai` · `skills-based-hiring` · `proof-of-skill` · `verified-credentials` · `blind-hiring` · `consent-based-access` · `skill-graph` · `placement-analytics` · `human-in-the-loop` · `responsible-ai` · `audit-trail` · `supabase` · `row-level-security` · `react` · `typescript` · `vite` · `tailwindcss` · `playwright` · `vercel` · `hrtech` · `edtech`
 
 </details>
