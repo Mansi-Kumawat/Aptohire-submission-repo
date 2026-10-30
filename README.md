@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="AptoHire: Proof-first hiring. Hired for what you can do." width="100%">
+<img src="Assets/banner.png" alt="AptoHire: Proof-first hiring. Hired for what you can do." width="100%">
 
 <p><i>A résumé is a claim. A verified scorecard is proof.</i></p>
 
