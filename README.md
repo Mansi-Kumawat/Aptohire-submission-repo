@@ -160,11 +160,14 @@ flowchart TB
 
 ## 🎬 Product demo and walkthrough
 
-<!--
-TODO (visual): add a clickable video poster, e.g.
-[![Watch the AptoHire demo](Assets/demo-poster.png)](<video link>)
-Export a frame from AptoHire_Product_Film_1080p.mp4 to Assets/demo-poster.png.
--->
+<div align="center">
+
+<video src="Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4" controls preload="metadata" width="100%">
+  Your browser does not support the video tag.
+  <a href="Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4">Download the AptoHire Product Film (1080p)</a>.
+</video>
+
+</div>
 
 ▶️ **[Watch the AptoHire Product Film (1080p)](https://github.com/Mansi-Kumawat/Aptohire-submission-repo/blob/main/Pitch%20Deck%20and%20Demo%20Video/Demo_Video/AptoHire_Product_Film_1080p.mp4)** · 🌐 **[Try the live prototype](https://aptohire.vercel.app)**
 
@@ -599,19 +602,22 @@ AptoHire was built by a three-member founding team combining product vision, tec
       <!-- TODO: add photo, e.g. <img src="Assets/team/ravi.jpg" width="110" style="border-radius:50%"> -->
       <br><b>Ravi Prakash</b><br><sub><b>Founder</b></sub><br><br>
       Originated the idea and contributed to early product discussions.<br><br>
-      <!-- TODO: add GitHub / LinkedIn links -->
+      <!-- TODO: add Ravi's GitHub profile link and badge once available -->
+      <a href="https://www.linkedin.com/in/ravi-prakash-singh-kushwaha-348446426/"><img src="https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
     </td>
     <td align="center" width="33%">
       <a href="https://github.com/Mansi-Kumawat"><img src="https://avatars.githubusercontent.com/u/145416594?v=4" width="110" alt="Mansi Kumawat"></a>
       <br><b>Mansi Kumawat</b><br><sub><b>Co-founder &amp; Team Lead</b></sub><br><br>
       Led team coordination, documentation and full-stack development.<br><br>
-      <a href="https://github.com/Mansi-Kumawat">GitHub</a> <!-- TODO: LinkedIn -->
+      <a href="https://github.com/Mansi-Kumawat"><img src="https://img.shields.io/badge/GitHub-connect-181717?style=flat-square&logo=github" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/mansi-kumawat00"><img src="https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
     </td>
     <td align="center" width="33%">
       <a href="https://github.com/LAXMINARAYAN24"><img src="https://avatars.githubusercontent.com/u/150174659?v=4" width="110" alt="Laxminarayan Sahu"></a>
       <br><b>Laxminarayan Sahu</b><br><sub><b>Co-founder</b></sub><br><br>
       Contributed technical guidance, UI/technology inputs and testing.<br><br>
-      <a href="https://github.com/LAXMINARAYAN24">GitHub</a> <!-- TODO: LinkedIn -->
+      <a href="https://github.com/LAXMINARAYAN24"><img src="https://img.shields.io/badge/GitHub-connect-181717?style=flat-square&logo=github" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/laxminarayan-sahu-49294227b/"><img src="https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
     </td>
   </tr>
 </table>
