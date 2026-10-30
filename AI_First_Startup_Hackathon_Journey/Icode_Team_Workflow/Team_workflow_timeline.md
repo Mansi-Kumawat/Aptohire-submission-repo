@@ -86,7 +86,7 @@ flowchart TD
 |---|---|---|
 | **Ravi Prakash** | Founder | Proposed the original idea and contributed to team discussions. |
 | **Mansi Kumawat** | Co-founder & Team Lead | Coordinated the team and handled documentation plus full-stack development. |
-| **Laxminarayan ** | Co-founder | Provided technical guidance, contributed UI/technology inputs, and helped significantly with testing. |
+| **Laxminarayan** | Co-founder | Provided technical guidance, contributed UI/technology inputs, and helped significantly with testing. |
 
 *The team collaborated on planning, product decisions and feedback throughout the sprint.*
 
