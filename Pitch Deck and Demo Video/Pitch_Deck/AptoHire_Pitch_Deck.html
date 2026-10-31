@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AptoHire | Pitch deck</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AptoHire | AI-first pitch deck</title>
 <style>
 :root{--navy:#172033;--green:#087A55;--mint:#EAF5EF;--gold:#D6A84F;--ink:#1e293b;--muted:#657186;--paper:#F4F7F5;--line:#DFE8E3}
 *{box-sizing:border-box;margin:0}html,body{height:100%;overflow:hidden;background:var(--navy);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
@@ -28,16 +28,19 @@ table{border-collapse:collapse;width:100%}th,td{padding:.9vh .8vw;text-align:cen
 .av{width:7vh;height:7vh;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--gold));display:grid;place-items:center;color:#fff;font-weight:800;font-size:2.4vh}
 .ui{position:fixed;z-index:9;left:0;right:0;bottom:0;display:flex;align-items:center;gap:1.2vw;padding:1.4vh 3vw;color:#fff;font-size:13px;background:linear-gradient(transparent,rgba(23,32,51,.85))}
 #bar{position:fixed;top:0;left:0;height:4px;background:var(--gold);z-index:10;transition:.5s}.ui button{background:rgba(255,255,255,.15);color:#fff;border:0;border-radius:99px;padding:.5em 1em;cursor:pointer;font:inherit}.dots{display:flex;gap:6px;flex:1;justify-content:center}.dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer}.dots i.on{background:var(--gold);transform:scale(1.4)}
+.flow{display:grid;grid-template-columns:1fr 6vw 1.4fr 6vw 1fr;align-items:center;gap:.6vw}.pulse{display:block;height:3px;background:rgba(255,255,255,.2);position:relative;overflow:hidden;border-radius:3px}.pulse::after{content:"";position:absolute;top:0;bottom:0;width:35%;background:var(--gold);animation:mv 1.5s linear infinite}@keyframes mv{from{left:-40%}to{left:105%}}
+.ch{position:relative;overflow:hidden}.ch::after{content:"";position:absolute;left:0;right:0;height:3px;background:var(--gold);animation:sc 2.4s ease-in-out infinite}@keyframes sc{0%{top:0}100%{top:100%}}
+@media(max-width:800px){.flow{grid-template-columns:1fr}.pulse{display:none}}
 @media(max-width:800px){.c2,.c3,.c4,.c5{grid-template-columns:1fr 1fr}.step::after{display:none}.tl{flex-wrap:wrap}.tl>div{flex:1 1 45%}.dots{display:none}}
 @media print{html,body{overflow:visible;height:auto}.s{position:relative;opacity:1;visibility:visible;transform:none;min-height:100vh;page-break-after:always}.ui,#bar{display:none}.r,.cc{opacity:1;transform:none}.rg{stroke-dashoffset:91.5}}
 </style></head><body><div id="bar"></div>
 
 <section class="s dk"><div class="b" style="width:40vw;height:40vw;background:var(--green);left:-8vw;top:-10vw"></div><div class="b" style="width:30vw;height:30vw;background:var(--gold);right:-6vw;bottom:-8vw;animation-delay:-4s"></div>
-<span class="pill r">AptoHire · Hackathon pitch · October 2026</span>
+<span class="pill r">AptoHire · AI-first skill proof · Hackathon pitch · October 2026</span>
 <p class="m r" style="--d:1">Every minute, LinkedIn alone handles about</p>
 <div class="big r" style="--d:2;font-size:clamp(54px,12vw,170px)"><span data-to="11000">0</span></div>
 <h1 class="r" style="--d:3">applications. Everyone applies.<br><span class="gd">Nobody can prove.</span></h1>
-<p class="m r" style="--d:4">We make skills <b>verifiable</b>, talent <b>discoverable</b>, and hiring <b>fair</b>. <span class="gd">Hired for what you can do.</span></p></section>
+<p class="m r" style="--d:4">An <b>AI-first</b> platform that makes skills <b>verifiable</b>, talent <b>discoverable</b>, and hiring <b>fair</b>. <span class="gd">Hired for what you can do.</span></p></section>
 
 <section class="s"><span class="k r">The story</span>
 <h2 class="r" style="--d:1">A recruiter rejected the same CV <span class="gr">twice</span>.</h2>
@@ -52,10 +55,21 @@ table{border-collapse:collapse;width:100%}th,td{padding:.9vh .8vw;text-align:cen
 <p class="m sm r" style="--d:6">Sources: LinkedIn via eWeek/NYT · Greenhouse · Gartner via HR Dive · MoSPI PLFS Annual Report 2025 · India Skills Report 2026. Different measures; they point to the same gap.</p></section>
 
 <section class="s dk"><span class="k r">The solution</span><h2 class="r" style="--d:1">Proof of work, not claims of work.</h2>
-<div class="g c3"><div class="card step r" style="--d:2"><div class="big">1</div><h2 style="font-size:clamp(20px,2.4vw,32px)">Build</h2><p class="m">A real project at the student's level, with a 3-minute demo video.</p></div>
-<div class="card step r" style="--d:3"><div class="big">2</div><h2 style="font-size:clamp(20px,2.4vw,32px)">Verify</h2><p class="m">AI reviews against a rubric; every score links to evidence. Humans check borderline results.</p></div>
-<div class="card r" style="--d:4"><div class="big">3</div><h2 style="font-size:clamp(20px,2.4vw,32px)">Get found</h2><p class="m">Employers see skills, not names. Identity is revealed only if the student says yes.</p></div></div>
+<div class="g c3"><div class="card step r" style="--d:2"><div class="big">1</div><h2 style="font-size:clamp(20px,2.4vw,32px)">Build</h2><p class="m">An AI recommender gives a real project at the student's level; the student records a 3-minute demo.</p></div>
+<div class="card step r" style="--d:3"><div class="big">2</div><h2 style="font-size:clamp(20px,2.4vw,32px)">Verify</h2><p class="m">AI agents audit video, audio, script and code against a rubric; every score links to evidence. Humans check borderline cases.</p></div>
+<div class="card r" style="--d:4"><div class="big">3</div><h2 style="font-size:clamp(20px,2.4vw,32px)">Get found</h2><p class="m">An AI matching agent ranks anonymous candidates with reasons. Identity is revealed only if the student says yes.</p></div></div>
 <p class="r" style="--d:5"><span class="pill">AI proposes. Rules decide.</span> <span class="m">Identity, consent and permissions never depend on AI.</span></p></section>
+
+<section class="s dk"><span class="k r">AI-first architecture</span><h2 class="r" style="--d:1">AI does the work. Rules keep it safe.</h2>
+<div class="flow r" style="--d:2"><div class="card"><b class="gd">Inputs</b><p class="sm m">Student evidence · recruiter role · student goal · profile sources (with permission)</p></div><i class="pulse"></i><div class="card"><b class="gd">n8n workflow layer</b><p class="sm m">Route · validate · retry · notify · log every run</p></div><i class="pulse"></i><div class="card"><b class="gd">Rules layer</b><p class="sm m">The backend owns permissions, consent and saving. Humans review borderline cases.</p></div></div>
+<div class="g c4"><div class="card r" style="--d:3"><b class="gd">1 · Project recommender</b><p class="sm m">Goal and level in, real-world project brief out.</p></div><div class="card r" style="--d:4"><b class="gd">2 · Proof audit agent</b><p class="sm m">Video, audio, script and code in, evidence-linked score out.</p></div><div class="card r" style="--d:5"><b class="gd">3 · Blind matching agent</b><p class="sm m">Role plus verified skills in, anonymous ranked shortlist with reasons out.</p></div><div class="card r" style="--d:6"><b class="gd">4 · Profile update agent</b><p class="sm m">Permissioned sources in, proposed profile changes out. Never invents skills.</p></div></div>
+<p class="r" style="--d:7"><span class="pill">AI proposes. Rules decide.</span></p>
+<p class="m sm r" style="--d:8">Intended architecture. The prototype runs agents in built-in modes; n8n orchestration is the next step. Each workflow is verified before we call it live.</p></section>
+
+<section class="s"><span class="k r">The proof audit agent</span><h2 class="r" style="--d:1">Four evidence channels. One explainable score.</h2>
+<div class="g c4"><div class="card ch r" style="--d:2"><b class="gr">Visual</b><p class="sm">Demo video and artefacts</p></div><div class="card ch r" style="--d:3"><b class="gr">Audio</b><p class="sm">Spoken explanation</p></div><div class="card ch r" style="--d:4"><b class="gr">Script</b><p class="sm">Transcript and description</p></div><div class="card ch r" style="--d:5"><b class="gr">Cross-check</b><p class="sm">Docs, code, GitHub, live link</p></div></div>
+<div class="g c2"><div class="card r lock" style="--d:6"><b>Fusion + rubric</b><p class="sm">Clear and sufficient: scorecard with score, rationale, evidence references and confidence. Borderline or conflicting: human review or appeal.</p></div><div class="card r" style="--d:7"><b>Trust safeguards</b><p class="sm">Schema-checked outputs · rubric version stored · bounded retries · kill switch · we measure false passes, false fails and AI-human agreement (target 80%+).</p></div></div>
+<p class="m sm r" style="--d:8">Pass mark (50) and the 40-60 review band are proposed thresholds to calibrate in the pilot. Accent, camera quality and AI-use disclosure are not penalised.</p></section>
 
 <section class="s"><span class="k r">The product</span><h2 class="r" style="--d:1">Five portals. One trusted record.</h2>
 <div class="g c2"><div class="card r" style="--d:2;display:flex;gap:1.5vw;align-items:center"><svg class="ring" viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="#DFE8E3" stroke-width="11"/><circle class="rg" cx="60" cy="60" r="52" fill="none" stroke="#087A55" stroke-width="11" stroke-linecap="round" transform="rotate(-90 60 60)"/><text x="60" y="68" text-anchor="middle" font-size="30" font-weight="800" fill="#172033"><tspan data-to="72">0</tspan></text></svg>
@@ -94,16 +108,16 @@ table{border-collapse:collapse;width:100%}th,td{padding:.9vh .8vw;text-align:cen
 
 <section class="s dk"><span class="k r">Scalability strategy</span><h2 class="r" style="--d:1">Land. Expand. Become the standard.</h2>
 <div class="g c3"><div class="card r" style="--d:2"><h2 class="gd" style="font-size:2.4vw">Land</h2><p class="m">2 pilot universities, one IT/CS department, 50-100 students, 3-5 employers.</p></div><div class="card r" style="--d:3"><h2 class="gd" style="font-size:2.4vw">Expand</h2><p class="m">Department → campus → state clusters through TPO networks; employers follow verified talent.</p></div><div class="card r" style="--d:4"><h2 class="gd" style="font-size:2.4vw">Standard</h2><p class="m">ATS and LMS integrations, AI skill interviews, Hindi and regional languages.</p></div></div>
-<div class="g c3"><p class="sm r" style="--d:5"><b class="gd">Tech:</b> separate portals, one database with row-level security; adding a university adds data, not code.</p><p class="sm r" style="--d:6"><b class="gd">Cost curve:</b> AI cost per review ₹12 → ₹4.5; human-check share 15% → 8% (assumptions to measure).</p><p class="sm r" style="--d:7"><b class="gd">Moat grows with use:</b> validated scores, college relationships, consent trust.</p></div></section>
+<div class="g c3"><p class="sm r" style="--d:5"><b class="gd">Tech:</b> AI agents are modular: a new skill family needs a new rubric and templates, not new code. One database, row-level security.</p><p class="sm r" style="--d:6"><b class="gd">Cost curve:</b> AI cost per review ₹12 → ₹4.5; human-check share 15% → 8% (assumptions to measure).</p><p class="sm r" style="--d:7"><b class="gd">Moat grows with use:</b> validated scores, college relationships, consent trust.</p></div></section>
 
 <section class="s"><span class="k r">Roadmap</span><h2 class="r" style="--d:1">From prototype to pilot to platform.</h2>
-<div class="tl r" style="--d:2"><div class="d"><b>28 Oct 2026</b><p class="sm">✔ Prototype: 5 portals + backend</p></div><div><b>Nov-Dec 2026</b><p class="sm">Production hardening, security and legal checks</p></div><div><b>Q1 2027</b><p class="sm">Pilot: 60% submit, 80% AI-human agreement, 50% access accepted</p></div><div><b>2027</b><p class="sm">First paid: ~4 institutions, ~7 employers</p></div><div><b>2028+</b><p class="sm">25 → 90 institutions, state clusters, integrations</p></div></div>
+<div class="tl r" style="--d:2"><div class="d"><b>28 Oct 2026</b><p class="sm">✔ Prototype: 5 portals + backend</p></div><div><b>Nov-Dec 2026</b><p class="sm">Production hardening, AI workflow checks, security and legal</p></div><div><b>Q1 2027</b><p class="sm">Pilot: calibrate agents with human reviewers; 60% submit, 80% AI-human agreement, 50% access accepted</p></div><div><b>2027</b><p class="sm">First paid: ~4 institutions, ~7 employers</p></div><div><b>2028+</b><p class="sm">25 → 90 institutions, state clusters, integrations</p></div></div>
 <p class="m sm r" style="--d:3">Future: AI-led skill interviews · ATS/LMS integrations · more skill families beyond Web/Frontend · multilingual · independent-student verification.</p></section>
 
 <section class="s dk"><span class="k r">The team</span><h2 class="r" style="--d:1">Three founders. Two weeks. One working prototype.</h2>
 <div class="g c3"><div class="card r" style="--d:2"><div class="av">RP</div><h2 style="font-size:2.2vw;margin-top:1vh">Ravi Prakash</h2><p class="gd sm"><b>Founder</b></p><p class="m sm">Proposed the original idea; shaped the vision and discussions.</p></div>
 <div class="card r" style="--d:3"><div class="av">MK</div><h2 style="font-size:2.2vw;margin-top:1vh">Mansi Kumawat</h2><p class="gd sm"><b>Co-founder · Team Lead</b></p><p class="m sm">Coordinated the team; documentation and full-stack development.</p></div>
-<div class="card r" style="--d:4"><div class="av">LN</div><h2 style="font-size:2.2vw;margin-top:1vh">Laxminarayan</h2><p class="gd sm"><b>Co-founder</b></p><p class="m sm">Technical guidance, UI and technology inputs, heavy testing.</p></div></div>
+<div class="card r" style="--d:4"><div class="av">LN</div><h2 style="font-size:2.2vw;margin-top:1vh">Lakshmi Narayan</h2><p class="gd sm"><b>Co-founder</b></p><p class="m sm">Technical guidance, UI and technology inputs, heavy testing.</p></div></div>
 <p class="sm r" style="--d:5"><b class="gd">13 Oct</b> build starts → <b class="gd">17 Oct</b> first prototype → <b class="gd">20 Oct</b> Version A reviewed, dropped for gaps → <b class="gd">25 Oct</b> Version B ready → <b class="gd">28 Oct</b> core complete.</p>
 <p class="m sm r" style="--d:6">AI-assisted (about 85% by team estimate, not audited) with Gemini, Claude, ChatGPT and Arena AI; humans own decisions, testing and review. Seeking: university intros, recruiter pilots, advisors.</p></section>
 

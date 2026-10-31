@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AptoHire | AI Utilization Report</title>
+<style>
+:root{--navy:#172033;--green:#087A55;--mint:#EAF5EF;--paper:#F4F7F5;--gold:#D6A84F;--ink:#263244;--muted:#657184;--line:#dce5e0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#f7faf8,#eef4f1);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}
+.progress{height:4px;position:fixed;top:0;left:0;z-index:9;background:var(--green);width:0;transition:width .12s}
+header{background:var(--navy);color:white;padding:58px max(22px,calc((100vw - 1080px)/2)) 44px;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff20;border-radius:50%;right:-110px;top:-210px;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff05}
+.kicker{color:#9de1c5;text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:800}
+h1{font-size:clamp(2.4rem,6vw,4.8rem);line-height:1.02;letter-spacing:-.055em;max-width:750px;margin:14px 0}
+header p{color:#d8e3e0;max-width:740px;font-size:1.1rem}
+.wrap{max-width:1080px;margin:auto;padding:26px 22px 70px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-28px;position:relative}
+.metric{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 12px 35px #1720330d;animation:rise .65s both}
+.metric:nth-child(2){animation-delay:.1s}.metric:nth-child(3){animation-delay:.2s}
+.metric strong{font-size:2.25rem;color:var(--green);display:block;line-height:1.1}.metric span{font-size:.9rem;color:var(--muted)}
+section{margin-top:32px;scroll-margin-top:20px}
+h2{color:var(--navy);font-size:1.65rem;letter-spacing:-.03em;margin-bottom:8px}
+.lead{color:var(--muted);max-width:820px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 8px 25px #17203308}
+.pill{display:inline-block;padding:4px 9px;border-radius:99px;background:var(--mint);color:var(--green);font-weight:750;font-size:.76rem}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin-top:18px}
+.step{background:white;border:1px solid var(--line);border-radius:14px;padding:14px;position:relative;transition:transform .2s,box-shadow .2s}
+.step:hover{transform:translateY(-4px);box-shadow:0 12px 25px #17203312}
+.step b{color:var(--green);display:block;font-size:.82rem;letter-spacing:.05em}.step span{font-size:.9rem}
+.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:14px;background:white}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.9rem}
+th{background:var(--navy);color:white;text-align:left;font-size:.78rem;letter-spacing:.04em}
+td,th{padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top}tbody tr:nth-child(even){background:#f7faf8}
+details{background:white;border:1px solid var(--line);border-radius:14px;margin:12px 0;overflow:hidden}
+summary{padding:15px 18px;cursor:pointer;font-weight:750;color:var(--navy);list-style:none}
+summary:after{content:"＋";float:right;color:var(--green)}details[open] summary:after{content:"−"}
+.detailbody{padding:0 18px 18px;color:var(--muted)}
+.productcards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.product{background:white;border:1px solid var(--line);border-radius:16px;padding:18px;border-top:4px solid var(--green)}
+.product h3{margin:8px 0;color:var(--navy);font-size:1.05rem}.status{font-size:.75rem;font-weight:800;color:#76591c;background:#fff5db;border-radius:7px;padding:4px 7px;display:inline-block}
+.barbg{height:12px;background:#e3e9e6;border-radius:99px;overflow:hidden;margin:12px 0}
+.barfill{height:100%;width:0;background:linear-gradient(90deg,var(--green),#46b58b);border-radius:99px;transition:width 1.4s ease}
+.note{border-left:4px solid var(--gold);background:#fff9e9;padding:14px 16px;border-radius:0 12px 12px 0}
+footer{background:var(--navy);color:#d8e3e0;padding:28px max(22px,calc((100vw - 1080px)/2));font-size:.85rem}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+nav a{background:#ffffff12;border:1px solid #ffffff2b;border-radius:99px;color:#eaf5ef;text-decoration:none;padding:7px 11px;font-size:.82rem}
+button{border:0;background:var(--green);color:white;border-radius:10px;padding:10px 14px;font-weight:750;cursor:pointer}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:720px){.metrics,.grid2,.productcards{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}.metric strong{font-size:1.9rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header>
+<div class="kicker">Hackathon submission · Version 1.1</div>
+<h1>AI Utilization<br>Report</h1>
+<p><b>AptoHire</b> — AI used to build the product, and AI designed to power it. A concise view of the team's workflow, proposed product AI, and responsible-use approach.</p>
+<nav><a href="#build">AI in development</a><a href="#product">AI in product</a><a href="#ux">UI/UX</a><a href="#estimate">Utilization estimate</a><a href="#next">Next steps</a></nav>
+</header>
+<main class="wrap">
+<div class="metrics">
+<div class="metric"><strong>~85%</strong><span>Team-reported estimate of AI-assisted execution activities*</span></div>
+<div class="metric"><strong>2 layers</strong><span>AI in development + AI inside the product vision</span></div>
+<div class="metric"><strong>Human-led</strong><span>Product decisions, review, manual testing and accountability</span></div>
+</div>
+
+<section id="build">
+<h2>01 / AI used to build AptoHire</h2><p class="lead">AI supported planning, market/product analysis, documentation, prompt engineering, UI/UX iteration and full-stack prototype development. The team reviewed outputs and manually tested flows.</p>
+<div class="flow">
+<div class="step"><b>01 · IDEATE</b><span>Team discussion and concept selection</span></div>
+<div class="step"><b>02 · PLAN</b><span>Gemini, Claude and ChatGPT</span></div>
+<div class="step"><b>03 · SPECIFY</b><span>PRD, architecture and prompts</span></div>
+<div class="step"><b>04 · BUILD</b><span>Arena AI coding assistance</span></div>
+<div class="step"><b>05 · ITERATE</b><span>Human testing and feedback</span></div>
+</div>
+<details><summary>Evidence available in AI_Utilization.zip</summary><div class="detailbody"><ul><li>Gemini planning traces and a Claude planning-session log.</li><li>Arena AI coding traces for root, student, university, organization and admin portals.</li><li>Claude portal/backend prompts, frozen API contracts and technical documentation.</li><li>The backend Arena trace is pending and should be added when available.</li><li>ChatGPT use is team-reported; a full ChatGPT conversation export was not included in the ZIP.</li></ul></div></details>
+<div class="tablewrap"><table><thead><tr><th>Tool</th><th>Reported role</th><th>Evidence/status</th></tr></thead><tbody>
+<tr><td><b>Gemini</b></td><td>Planning, idea exploration, market/product analysis</td><td>Planning traces included</td></tr>
+<tr><td><b>Claude</b></td><td>Planning, prompt refinement, technical docs and coding prompts</td><td>Log, prompts and documentation included</td></tr>
+<tr><td><b>ChatGPT</b></td><td>Brainstorming, planning, marketing analysis and technical learning</td><td>Team-reported; full conversation export not included</td></tr>
+<tr><td><b>Arena AI</b></td><td>Prompt-led coding assistance across the portals</td><td>Portal traces included; backend trace pending</td></tr>
+<tr><td><b>Human testing</b></td><td>Run flows, identify gaps, review outputs and give feedback</td><td>Team-reported; test coverage not quantified</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="product">
+<h2>02 / AI designed to power AptoHire</h2><p class="lead">AptoHire's product vision uses AI to make skills evidence more useful and talent discovery more relevant. These are planned capabilities unless verified as implemented in the live prototype.</p>
+<div class="productcards">
+<div class="product"><span class="pill">Evidence layer</span><h3>Project & skill evidence review</h3><p>Assist with reviewing project descriptions and submitted evidence; flag missing or inconsistent information for human review.</p><span class="status">Planned / verify implementation</span></div>
+<div class="product"><span class="pill">Talent discovery</span><h3>Skill-based blind matching</h3><p>Compare role requirements with relevant skill evidence and help surface candidates while minimizing unnecessary identity exposure early in discovery.</p><span class="status">Planned / verify implementation</span></div>
+<div class="product"><span class="pill">Learner experience</span><h3>AI profile assistance</h3><p>Help learners structure project descriptions, organize skills and identify missing information—without inventing experience.</p><span class="status">Planned / verify implementation</span></div>
+<div class="product"><span class="pill">Future roadmap</span><h3>AI judge / skill interview</h3><p>Future structured role-relevant questions and rubric-based feedback, with human review of assessment signals.</p><span class="status">Future capability</span></div>
+</div>
+<details><summary>How blind matching is intended to work</summary><div class="detailbody"><ol><li>Organization defines role requirements.</li><li>AI compares requirements with permitted skill evidence.</li><li>Discovery prioritizes skill relevance and hides unnecessary identity information where feasible.</li><li>Authorized recruiter reviews the match and makes the decision.</li></ol><p><b>Fairness guardrail:</b> blind matching does not guarantee bias-free outcomes. Criteria, data quality, privacy, explainability and human review must be tested.</p></div></details>
+</section>
+
+<section id="ux">
+<h2>03 / AI-assisted UI/UX workflow</h2><p class="lead">AI helped the team explore interface ideas, plan layout and refine prompts; the team then reviewed the interface and tested user flows.</p>
+<div class="flow">
+<div class="step"><b>DISCOVER</b><span>User needs and team discussion</span></div><div class="step"><b>PLAN</b><span>AI-assisted UI ideas</span></div><div class="step"><b>IMPLEMENT</b><span>Prompt-led coding assistance</span></div><div class="step"><b>REVIEW</b><span>Visual and manual testing</span></div><div class="step"><b>REFINE</b><span>Feedback and iteration</span></div>
+</div>
+<details><summary>What judges should see in the demo</summary><div class="detailbody"><ul><li>Consistent navigation across portals.</li><li>Role-specific workflows and actual interactions where supported.</li><li>A student evidence/profile example and an organization discovery example, if those flows work today.</li><li>Clear labels for mock data, unfinished screens and planned features.</li></ul><p>Avoid claiming a UI quality score or usability improvement unless measured in user testing.</p></div></details>
+</section>
+
+<section id="estimate">
+<h2>04 / AI utilization estimate</h2><p class="lead">Approximately 85% of execution activities were AI-assisted, based on the team's description of the workflow and available artifacts.</p>
+<div class="card"><div style="display:flex;justify-content:space-between;gap:12px"><b>AI-assisted activities · estimate</b><b>85%</b></div><div class="barbg"><div class="barfill" data-width="85%"></div></div><div style="display:flex;justify-content:space-between;gap:12px"><span>Direct human-led activities · estimate</span><b>15%</b></div><div class="barbg"><div class="barfill" data-width="15%" style="background:linear-gradient(90deg,#d6a84f,#efd48b)"></div></div><p class="note"><b>Qualification:</b> this is a qualitative team estimate—not an audited measurement of hours, code authorship or AI-written lines. Do not describe it as “85% of code was written by AI.” Align it with the hackathon's formal definition before submission.</p></div>
+</section>
+
+<section id="next">
+<h2>05 / Pitch deck & demo video — next phase</h2><p class="lead">Future AI usage will be recorded only after the team creates the assets.</p>
+<div class="flow">
+<div class="step"><b>VERIFY</b><span>Confirm current product flows</span></div><div class="step"><b>STORY</b><span>AI-assisted narrative and slide outline</span></div><div class="step"><b>CREATE</b><span>Build deck and demo script</span></div><div class="step"><b>DEMO</b><span>Record real product walkthrough</span></div><div class="step"><b>CHECK</b><span>Human fact-check and review</span></div>
+</div>
+<p>Potential tools include Arena, Manus, Claude, ChatGPT, Gemini, NotebookLM and Google AI Studio. Use only the tools that genuinely help and record the ones actually used.</p>
+</section>
+
+<section>
+<h2>06 / Responsible AI principles</h2>
+<div class="grid2">
+<div class="card"><b>Evidence, not fabrication</b><p>AI profile assistance must not invent projects, skills or experience.</p></div>
+<div class="card"><b>Human oversight</b><p>Recommendations and future interview feedback support—not replace—human judgment.</p></div>
+<div class="card"><b>Privacy by design</b><p>Share only necessary information, respect student permissions and protect evidence.</p></div>
+<div class="card"><b>Fairness and transparency</b><p>Test criteria and outcomes; blind matching alone does not remove all bias.</p></div>
+</div>
+</section>
+<section>
+<h2>Submission-ready statement</h2>
+<div class="card"><p>AptoHire used AI-assisted workflows for ideation, planning, market and product analysis, technical documentation, prompt engineering, UI/UX iteration and full-stack prototype development. Gemini, Claude, ChatGPT and Arena AI supported different parts of the workflow, while the team retained responsibility for product decisions, review, manual testing and iteration. Based on the workflow and supporting artifacts, the team estimates approximately 85% of execution activities were AI-assisted; this is a qualitative estimate, not an audited measurement. Within the product vision, AI is intended to support project/skill evidence review, skill-based blind matching and profile assistance, with structured AI-led skill interviews on the future roadmap. Product features will be described as live only after implementation and validation. AI-assisted pitch-deck and demo-video work will be documented after completion.</p><button onclick="navigator.clipboard.writeText(document.querySelector('#submissionText')?.innerText || this.previousElementSibling.innerText)">Copy statement</button><div id="submissionText" hidden></div></div>
+</section>
+</main>
+<footer>AptoHire · AI Utilization Report · Version 1.1 · 30 October 2026<br>Prepared for hackathon submission. Draft for team verification before submission.</footer>
+<script>
+const progress=document.getElementById('progress');
+addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%'});
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='translateY(0)';io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('section,.card').forEach(el=>{el.style.opacity=0;el.style.transform='translateY(12px)';el.style.transition='opacity .5s ease, transform .5s ease';io.observe(el)});
+const barIO=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.style.width=e.target.dataset.width;barIO.unobserve(e.target)}}),{threshold:.4});
+document.querySelectorAll('.barfill').forEach(el=>barIO.observe(el));
+</script>
+</body></html>
